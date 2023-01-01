@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link rel="stylesheet" href="BPS.css">
+</head>
+<body>
+    <header style="background-image: url('https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+   <h1 class="name"> BPS play<br> school</h1>
+   <img id="image1" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsmvi0jvpb_aSBejI1Nfkg5wf0xrgtFBeNXg7r11JD0QzNNg7W_zJyyqevC14i8Nt-NVTrMeBZRAWiKHeCcL_zPFfGiUk8ZRRNuOuXKesdgFFgKf009w0-gr72VXODALJsgc_OgAjQC3GfwlxrdTFdjiSN-D9xExAnXR95mJ5MeBCSLMMGNQh5VvCL/s1238/MergedImages.png" alt="">
+
+</header>
+<section class=" card1">
+
+</section>
+
+
+<button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
+<button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">Games</button>
+<button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
+<button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+
+<div id="Home" class="tabcontent">
+  <h3>Home</h3>
+  <p>Home is where the heart is..</p>
+</div>
+
+<div id="News" class="tabcontent">
+  <h3>Games</h3>
+  <p>In our school we provide a lot of facility to you.</p>
+  <br>
+  <br>
+  <ul>
+     <li><h4>some of the games are given bellow</h4> </li>
+     <br><br><br>
+    <div class="game1">
+     <ol><li>
+     <h2>carrom board</h2>
+     
+    </li>
+    <br>
+   
+  </ol>
+  <div class="carram_board" style="display: flex;">
+    <img id="carromboard" src="https://media.zacatrus.es/catalog/product/cache/3be2b7bb42f58e7a30e73042a1209c2b/u/n/unnamed_1__1.png" alt="">
+    <ul>
+      
+    <li><h4>we provide carromboard as game.</h4></li>
+    <li><h4>childrens can play with it.</h4></li>
+    <li><h4>all the student of nursery to 1st class.</h4></li>
+  </ul>
+</div>
+<br>
+<br><br>
+<div class="chess" style="display: flex;">
+  <h2>2. chess</h2>
+  <br>
+  <img id="carromboard" src="https://th.bing.com/th/id/R.d9fa75d92a428859805da7c49cddaa92?rik=PGId2hkIAwhrag&riu=http%3a%2f%2fwww.stickpng.com%2fassets%2fimages%2f580b585b2edbce24c47b27aa.png&ehk=5ycUlMOb4nFeXOla0CmXTufF2yjd25W6Hfa1ADi5tpc%3d&risl=&pid=ImgRaw&r=0" alt="">
+  <ul>
+    
+  <li><h4>we provide chess as game.</h4></li>
+  <li><h4>childrens can play with it.</h4></li>
+  <li><h4>all the student of nursery to 1st class.</h4></li>
+  
+</ul>
+
+</div>
+</div>
+</div>
+
+<div id="Contact" class="tabcontent">
+
+  <h3>Contact Form</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="class">Class</label>
+    <input type="text" id="class" name="class" placeholder=" your Class..">
+
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</div>
+
+<div id="About" class="tabcontent">
+  <ol><li>
+ <h2>This school is located in jind city.</h2></li>
+ <br><br>
+</ol>
+<ul>
+<li><h4>This school is runing by Pooja Sharma.</h4></li>
+<li><h4>This school take committed for excellent result.</h4></li>
+<li><h4>we will improve the handwriting of students.</h4></li>
+</ul>
+<br><br>
+<h1 style="text-align: center;">LOCATION</h1>
+<br><br>
+add bps school
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3496.395546915423!2d76.12513471501289!3d28.797284282353093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39126729cdebd88d%3A0x4abbca54cf6a99c9!2sShishu%20Bharti%20High%20School!5e0!3m2!1sen!2sin!4v1672570338588!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
+
+
+
+
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height:80vh ;
+    width: 100%;
+    font-family: 'Sofia';font-size: 42px; 
+    
+}
+.name{
+    text-align: center;
+}
+
+
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Home {background-color: red;}
+#News {background-color: green;}
+#Contact {background-color: blue;}
+#About {background-color: orange;}
+
+#carromboard{
+  width: 20vw;
+}
+.game1{
+  height: 100%;
+
+}
+#about_carram{
+  text-align: right;
+
+}
+container1{
+  display: flex;
+}
+
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #9b9b9b;
+  padding: 20px;
+}
+
+#image1{
+  height: 55%;
+  width:100%
+}
+
+
+</style>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
